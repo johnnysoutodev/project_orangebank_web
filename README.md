@@ -66,7 +66,7 @@ Exemplo de uso dos seletores no `app.html`:
 
 - `ng g c components/menu` — Cria o componente de menu
 - `ng g c pages/about` — Cria a página sobre
-- `ng g c pages/investments` — Cria a página de investimentos
+- `ng g c pages/invest` — Cria a página de investimentos
 - `ng g c pages/footer` — Cria a página de rodapé
 
 ## Observações
