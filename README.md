@@ -1,59 +1,79 @@
-# ProjectOrangebankWeb
+# project_orangebank_web
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+Landing page do **OrangeBank** — um projeto exemplo de banco digital moderno, desenvolvido em Angular 20, TypeScript 5.8.2 e SCSS.
 
-## Development server
+## Sobre o OrangeBank
 
-To start a local development server, run:
+O OrangeBank é um projeto fictício de banco digital, criado para demonstrar funcionalidades essenciais de uma instituição financeira moderna. O objetivo é apresentar, de forma simples e didática, os principais recursos que um banco digital pode oferecer aos seus clientes.
 
-```bash
-ng serve
+## Funcionalidades Demonstradas
+
+- **Extrato bancário:** Visualização de todas as movimentações da conta.
+- **Transferências entre correntistas:** Envio e recebimento de valores entre contas do OrangeBank.
+- **Lançamentos de contas em débito automático:** Cadastro e gerenciamento de contas para pagamento automático.
+- **Recebimento de salário:** Simulação de crédito de salário em conta.
+- **Lançamentos de compras em cartão de crédito:** Registro e acompanhamento das compras realizadas no cartão.
+- **Solicitação de limite:** Pedido de aumento de limite de crédito.
+- **Investimentos:**
+  - **Poupança**
+  - **CDB**
+  - **FIIs**
+  - **Ações**
+  - Compra e venda desses ativos diretamente pela plataforma.
+
+E outros recursos planejados para enriquecer a experiência do usuário.
+
+## Estrutura dos Blocos da Landing Page
+
+A landing page é composta por componentes modulares, cada um representando uma seção do banco digital, como:
+
+- **Sobre o OrangeBank**
+- **Conta Corrente**
+- **Cartão de Crédito**
+- **Investimentos**
+- **FAQ**
+- **Contato**
+
+Exemplo de uso dos seletores no `app.component.html`:
+
+```html
+<app-menu></app-menu>
+<app-about></app-about>
+<app-features></app-features>
+<app-investments></app-investments>
+<app-contact></app-contact>
+<app-footer></app-footer>
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Como rodar o projeto
 
-## Code scaffolding
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   ng serve
+   ```
 
-```bash
-ng generate component component-name
-```
+3. Acesse em [http://localhost:4200](http://localhost:4200)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Scripts úteis
 
-```bash
-ng generate --help
-```
+- `ng generate component pages/menu` — Cria o componente de menu
+- `ng generate component pages/about` — Cria o componente sobre
+- `ng generate component pages/features` — Cria o componente de funcionalidades
+- `ng generate component pages/investments` — Cria o componente de investimentos
+- `ng generate component pages/contact` — Cria o componente de contato
+- `ng generate component pages/footer` — Cria o componente de rodapé
 
-## Building
+## Observações
 
-To build the project run:
+- As versões das dependências estão travadas no `package.json` e `package-lock.json`.
+- Os estilos globais estão em `src/styles.scss`.
+- Este projeto é apenas para fins educacionais e demonstração.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Sinta-se à vontade para contribuir ou sugerir melhorias!
