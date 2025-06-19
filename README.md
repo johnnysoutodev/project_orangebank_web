@@ -57,7 +57,7 @@ Exemplo de uso dos seletores no `app.html`:
 
 2. Inicie o servidor de desenvolvimento:
    ```bash
-   ng serve
+   npm run start
    ```
 
 3. Acesse em [http://localhost:4200](http://localhost:4200)
