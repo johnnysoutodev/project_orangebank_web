@@ -19,7 +19,6 @@ O OrangeBank é um projeto fictício de banco digital, criado para demonstrar fu
   - **CDB**
   - **FIIs**
   - **Ações**
-  - Compra e venda desses ativos diretamente pela plataforma.
 
 E outros recursos planejados para enriquecer a experiência do usuário.
 
@@ -34,14 +33,18 @@ A landing page é composta por componentes modulares, cada um representando uma 
 - **FAQ**
 - **Contato**
 
-Exemplo de uso dos seletores no `app.component.html`:
+Exemplo de uso dos seletores no `app.html`:
 
 ```html
 <app-menu></app-menu>
+<app-hero></app-hero>
 <app-about></app-about>
-<app-features></app-features>
-<app-investments></app-investments>
-<app-contact></app-contact>
+<app-tech></app-tech>
+<app-account></app-account>
+<app-card></app-card>
+<app-invest></app-invest>
+<app-faq></app-faq>
+<app-banner></app-banner>
 <app-footer></app-footer>
 ```
 
@@ -61,12 +64,10 @@ Exemplo de uso dos seletores no `app.component.html`:
 
 ## Scripts úteis
 
-- `ng generate component pages/menu` — Cria o componente de menu
-- `ng generate component pages/about` — Cria o componente sobre
-- `ng generate component pages/features` — Cria o componente de funcionalidades
-- `ng generate component pages/investments` — Cria o componente de investimentos
-- `ng generate component pages/contact` — Cria o componente de contato
-- `ng generate component pages/footer` — Cria o componente de rodapé
+- `ng g c components/menu` — Cria o componente de menu
+- `ng g c pages/about` — Cria a página sobre
+- `ng g c pages/investments` — Cria a página de investimentos
+- `ng g c pages/footer` — Cria a página de rodapé
 
 ## Observações
 
