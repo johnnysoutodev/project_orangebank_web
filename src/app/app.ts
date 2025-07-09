@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Header } from "./components/header/header";
 import { Menu } from "./components/menu/menu";
 import { Hero } from './pages/hero/hero';
 import { About } from "./pages/about/about";
@@ -12,7 +13,7 @@ import { Footer } from "./pages/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [Menu, Hero, About, Tech, Account, Card, Invest, Faq, Banner, Footer],
+  imports: [Header, Menu, Hero, About, Tech, Account, Card, Invest, Faq, Banner, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

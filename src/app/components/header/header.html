@@ -1,0 +1,99 @@
+<header class="header">
+  <nav class="header__nav">
+    <div class="header__container">
+      <!-- Logo -->
+      <div class="header__logo">
+        <img 
+          src="assets/logotipo_orangebank.svg" 
+          alt="OrangeBank" 
+          class="header__logo-image"
+        />
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="#quem-somos" class="header__menu-link">Quem Somos</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#conta-digital" class="header__menu-link">Conta digital PJ</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#cartao-credito" class="header__menu-link">Cartão de crédito</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#ajuda" class="header__menu-link">Ajuda</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="header__actions">
+        <button class="header__btn header__btn--primary">
+          Abra conta Orange
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.33398 8H12.6673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.33398 4.66669L12.6673 8.00002L9.33398 11.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        
+        <button class="header__profile-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.667 17.5V15.8333C16.667 14.9493 16.3158 14.1014 15.6907 13.4763C15.0656 12.8512 14.2177 12.5 13.3337 12.5H6.66699C5.78298 12.5 4.93512 12.8512 4.31 13.4763C3.68488 14.1014 3.33366 14.9493 3.33366 15.8333V17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.0003 9.16667C11.8413 9.16667 13.3337 7.67428 13.3337 5.83333C13.3337 3.99238 11.8413 2.5 10.0003 2.5C8.15938 2.5 6.66699 3.99238 6.66699 5.83333C6.66699 7.67428 8.15938 9.16667 10.0003 9.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu toggle -->
+      <button 
+        class="header__mobile-toggle" 
+        (click)="toggleMobileMenu()"
+        [class.active]="isMobileMenuOpen"
+      >
+        <span class="header__mobile-toggle-line"></span>
+        <span class="header__mobile-toggle-line"></span>
+        <span class="header__mobile-toggle-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="header__mobile-menu" [class.active]="isMobileMenuOpen">
+      <div class="header__mobile-menu-content">
+        <ul class="header__mobile-menu-list">
+          <li class="header__mobile-menu-item">
+            <a href="#quem-somos" class="header__mobile-menu-link" (click)="closeMobileMenu()">
+              Quem Somos
+            </a>
+          </li>
+          <li class="header__mobile-menu-item">
+            <a href="#conta-digital" class="header__mobile-menu-link" (click)="closeMobileMenu()">
+              Conta digital PJ
+            </a>
+          </li>
+          <li class="header__mobile-menu-item">
+            <a href="#cartao-credito" class="header__mobile-menu-link" (click)="closeMobileMenu()">
+              Cartão de crédito
+            </a>
+          </li>
+          <li class="header__mobile-menu-item">
+            <a href="#ajuda" class="header__mobile-menu-link" (click)="closeMobileMenu()">
+              Ajuda
+            </a>
+          </li>
+        </ul>
+        
+        <div class="header__mobile-actions">
+          <button class="header__btn header__btn--primary" (click)="closeMobileMenu()">
+            Abra conta Orange
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.33398 8H12.6673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.33398 4.66669L12.6673 8.00002L9.33398 11.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
