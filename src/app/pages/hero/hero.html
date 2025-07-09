@@ -1,1 +1,46 @@
-<p>hero works!</p>
+<section class="hero">
+  <div class="hero__container">
+    <div class="hero__content">
+      <div class="hero__intro">
+        <span class="hero__emoji">👋</span>
+        <span class="hero__intro-text">Abra sua conta, é só baixar o app!</span>
+      </div>
+      
+      <h1 class="hero__title">
+        A maneira inteligente<br>
+        de <span class="hero__title--highlight">gerenciar dinheiro</span><br>
+        em qualquer lugar
+      </h1>
+      
+      <p class="hero__description">
+        Descubra uma nova era de conveniência, liberdade<br>
+        e controle total sobre suas finanças, para uma vida<br>
+        financeira simplificada e sem complicações.
+      </p>
+      
+      <div class="hero__actions">
+        <button class="hero__btn hero__btn--primary" (click)="onOpenAccount()">
+          Abra conta Orange
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        
+        <button class="hero__btn hero__btn--secondary" (click)="onLearnMore()">
+          Saiba mais
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="hero__image">
+      <div class="hero__image-container">
+        <img src="assets/hero-1.png" alt="Pessoa usando smartphone para gerenciar finanças" class="hero__image-item hero__image-item--left">
+        <img src="assets/hero-2.png" alt="Pessoa usando smartphone para gerenciar finanças" class="hero__image-item hero__image-item--center">
+        <img src="assets/hero-3.png" alt="Pessoa usando smartphone para gerenciar finanças" class="hero__image-item hero__image-item--right">
+      </div>
+    </div>
+  </div>
+</section>
