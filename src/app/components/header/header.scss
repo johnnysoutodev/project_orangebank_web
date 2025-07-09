@@ -332,14 +332,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-// Add top margin to body to compensate for fixed header
-body {
-  margin-top: 70px;
-}
-
-@media (max-width: 480px) {
-  body {
-    margin-top: 60px;
-  }
-}
