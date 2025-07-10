@@ -30,13 +30,10 @@
 
       <!-- Action buttons -->
       <div class="header__actions">
-        <button class="header__btn header__btn--primary">
-          Abra conta Orange
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.33398 8H12.6673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M9.33398 4.66669L12.6673 8.00002L9.33398 11.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
+        <app-button 
+          text="Abra conta Orange"
+          (click)="onOpenAccount()">
+        </app-button>
         
         <button class="header__profile-btn">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,13 +82,10 @@
         </ul>
         
         <div class="header__mobile-actions">
-          <button class="header__btn header__btn--primary" (click)="closeMobileMenu()">
-            Abra conta Orange
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.33398 8H12.6673" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9.33398 4.66669L12.6673 8.00002L9.33398 11.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
+          <app-button 
+            text="Abra conta Orange"
+            (click)="onOpenAccount()">
+          </app-button>
         </div>
       </div>
     </div>

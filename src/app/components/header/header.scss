@@ -252,14 +252,34 @@
     }
   }
 
+  app-button {
+    .app-button {
+      width: auto;
+      min-width: 180px;
+      max-width: 200px;
+      height: 48px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0 20px;
+      
+      // Ajusta o tamanho da seta para o header
+      &__arrow {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+  
   &__mobile-actions {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #f0f0f0;
     
-    .header__btn {
-      width: 100%;
-      justify-content: center;
+    app-button {
+      .app-button {
+        width: 100%;
+        max-width: none;
+      }
     }
   }
 }
@@ -288,6 +308,14 @@
 
     &__mobile-toggle {
       display: flex;
+    }
+
+    &__actions {
+      app-button {
+        .app-button {
+          display: none; // Esconde no mobile, aparece apenas no menu mobile
+        }
+      }
     }
   }
 }
@@ -323,6 +351,14 @@
       
       &-line {
         width: 16px;
+      }
+    }
+
+    app-button {
+      .app-button {
+        height: 44px;
+        font-size: 13px;
+        min-width: 160px;
       }
     }
   }
