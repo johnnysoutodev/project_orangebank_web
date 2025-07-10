@@ -1,0 +1,139 @@
+.app-button {
+  // Layout base
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px; // Reduzido de 8px para 6px para melhor proximidade
+  
+  // Estilo base
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  
+  // Transições suaves
+  transition: all 0.3s ease;
+  
+  // Typography
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  
+  // Variante Primary (padrão)
+  &--primary {
+    width: 220px;
+    height: 50px;
+    padding: 0px 29.286px; // Valor original
+    background: #F15A24;
+    color: #FFFFFF;
+    font-size: 16px;
+    
+    &:hover {
+      background: #d44a1c; // Versão mais escura de #F15A24
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(241, 90, 36, 0.3);
+      
+      .app-button__arrow {
+        transform: translateX(2px);
+      }
+    }
+    
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(241, 90, 36, 0.2);
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(241, 90, 36, 0.3);
+    }
+  }
+  
+  // Variante Light
+  &--light {
+    width: 180px;
+    height: 50px;
+    padding: 0px 9.286px; // Valor original
+    background: transparent;
+    color: #445059;
+    border: 1px solid #D4D4D4;
+    font-size: 16px;
+    
+    &:hover {
+      background: #95999C;
+      color: #FFFFFF;
+      border-color: #95999C;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(149, 153, 156, 0.3);
+      
+      .app-button__arrow {
+        transform: translateX(2px);
+        filter: brightness(0) invert(1); // Torna a seta branca no hover
+      }
+    }
+    
+    &:active {
+      background: #445059;
+      border-color: #445059;
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(68, 80, 89, 0.2);
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(212, 212, 212, 0.5);
+    }
+  }
+  
+  // Estado desabilitado (aplicável a ambas as variantes)
+  &--disabled {
+    background: #cccccc !important;
+    color: #888888 !important;
+    border-color: #cccccc !important;
+    cursor: not-allowed;
+    
+    &:hover {
+      background: #cccccc !important;
+      border-color: #cccccc !important;
+      transform: none !important;
+      box-shadow: none !important;
+      
+      .app-button__arrow {
+        transform: none !important;
+        filter: none !important;
+      }
+    }
+  }
+  
+  &__text {
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  &__arrow {
+    flex-shrink: 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+// Variante compacta (opcional)
+.app-button--compact {
+  width: auto;
+  min-width: 140px;
+  padding: 0px 20px;
+}
+
+// Variante full-width (opcional)
+.app-button--full {
+  width: 100%;
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .app-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 0px 24px;
+  }
+}

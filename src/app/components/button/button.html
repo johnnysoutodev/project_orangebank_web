@@ -1,0 +1,19 @@
+<button 
+  [type]="type"
+  [disabled]="disabled"
+  (click)="onClick()"
+  class="app-button"
+  [class.app-button--primary]="variant === 'primary'"
+  [class.app-button--light]="variant === 'light'"
+  [class.app-button--disabled]="disabled">
+  
+  <span class="app-button__text">{{ text }}</span>
+  
+  <img 
+    *ngIf="showArrow" 
+    class="app-button__arrow"
+    [src]="arrowSrc" 
+    [alt]="arrowIcon === 'arrow-down' ? 'Arrow down' : 'Arrow right'"
+    width="16" 
+    height="16">
+</button>
