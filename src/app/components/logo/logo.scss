@@ -1,0 +1,68 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 62.439px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+  }
+
+  // Estado normal - fundo cinza escuro
+  &:not(:hover):not(:focus):not(.logo--selected) {
+    background: #2C343A;
+  }
+
+  // Estados interativos apenas se for clicável
+  &--clickable {
+    cursor: pointer;
+
+    // Estado hover/focus
+    &:hover,
+    &:focus {
+      background: #F15A24;
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(241, 90, 36, 0.3);
+    }
+
+    // Adiciona acessibilidade para foco com teclado
+    &:focus {
+      outline: 2px solid #F15A24;
+      outline-offset: 2px;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  // Estado não clicável
+  &:not(&--clickable) {
+    cursor: default;
+  }
+
+  // Estado selecionado (pode ser aplicado via classe)
+  &--selected {
+    background: #F15A24;
+  }
+
+  // Responsividade para telas menores
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 48.72px; // Mantém a proporção
+  }
+
+  @media (max-width: 480px) {
+    width: 160px;
+    height: 39px; // Mantém a proporção
+  }
+}

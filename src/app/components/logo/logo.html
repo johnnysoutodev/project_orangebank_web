@@ -1,1 +1,15 @@
-<p>logo works!</p>
+<div 
+  class="logo"
+  [class.logo--selected]="isSelected"
+  [class.logo--clickable]="clickable"
+  (click)="onLogoClick()"
+  [tabindex]="clickable ? 0 : -1"
+  role="button"
+  [attr.aria-label]="'Logo OrangeBank' + (clickable ? ' - clique para ir ao início' : '')"
+>
+  <img 
+    src="assets/logo_orangebank.svg" 
+    alt="OrangeBank" 
+    class="logo__image"
+  />
+</div>
