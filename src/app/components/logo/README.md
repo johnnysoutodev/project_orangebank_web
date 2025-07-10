@@ -1,16 +1,15 @@
 # Logo Component
 
-Componente reutilizável do logotipo OrangeBank com estados interativos e responsividade.
+Componente reutilizável do logotipo OrangeBank com funcionalidade de botão e responsividade.
 
 ## Características
 
 - **Dimensões padrão**: 256px × 62.439px
-- **Cores do background**: 
-  - Estado normal: `#2C343A` (cinza escuro)
-  - Estado hover/selecionado: `#F15A24` (laranja)
+- **Fundo transparente**: Sem cores de fundo por padrão
+- **Visual limpo**: Sem border-radius ou estilos visuais excessivos
 - **Responsivo**: Adapta-se a diferentes tamanhos de tela
 - **Acessível**: Suporte completo a navegação por teclado
-- **Interativo**: Estados hover, focus e selecionado
+- **Interativo**: Estados hover, focus e selecionado sutis
 
 ## Propriedades
 
@@ -65,14 +64,20 @@ Componente reutilizável do logotipo OrangeBank com estados interativos e respon
 
 ## Estados Visuais
 
-1. **Normal**: Fundo cinza escuro (#2C343A)
-2. **Hover**: Fundo laranja (#F15A24) com animação de escala
-3. **Focus**: Fundo laranja com outline para acessibilidade
-4. **Selecionado**: Fundo laranja permanente
+1. **Normal**: Fundo transparente, sem estilos visuais ou animações
+2. **Focus**: Apenas outline laranja para acessibilidade (navegação por teclado)
+3. **Clicável**: Cursor pointer, mas sem efeitos visuais
 
 ## Acessibilidade
 
 - Suporte completo a navegação por teclado
 - ARIA labels descritivos
-- Estados de foco visíveis
+- Estados de foco visíveis (outline laranja)
 - Role="button" quando clicável
+
+## Design Principles
+
+- **Ultra-minimalista**: Sem animações, transições ou efeitos visuais
+- **Funcional**: Foco exclusivo na usabilidade como botão
+- **Estático**: Visual completamente limpo sem mudanças em hover
+- **Acessível**: Apenas outline de foco para navegação por teclado
