@@ -275,7 +275,10 @@
     padding-top: 20px;
     border-top: 1px solid #f0f0f0;
     
+    // Garantir que o botão apareça no menu mobile
     app-button {
+      display: block !important;
+      
       .app-button {
         width: 100%;
         max-width: none;
@@ -304,18 +307,15 @@
         width: 36px;
         height: 36px;
       }
+      
+      // Esconde o botão reutilizável apenas nas actions do header no mobile
+      app-button {
+        display: none !important;
+      }
     }
 
     &__mobile-toggle {
       display: flex;
-    }
-
-    &__actions {
-      app-button {
-        .app-button {
-          display: none; // Esconde no mobile, aparece apenas no menu mobile
-        }
-      }
     }
   }
 }
