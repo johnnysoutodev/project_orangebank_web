@@ -3,11 +3,10 @@
     <div class="header__container">
       <!-- Logo -->
       <div class="header__logo">
-        <img 
-          src="assets/logo_orangebank.svg" 
-          alt="OrangeBank" 
-          class="header__logo-image"
-        />
+        <app-logo 
+          [clickable]="true"
+          (logoClick)="onLogoClick()">
+        </app-logo>
       </div>
 
       <!-- Desktop Navigation -->

@@ -30,6 +30,15 @@
     align-items: center;
     flex-shrink: 0;
     
+    // Ajustar o tamanho do componente logo para o header
+    app-logo {
+      .logo {
+        width: 180px;
+        height: 43.8px; // Mantém a proporção original
+      }
+    }
+    
+    // Manter compatibilidade se ainda houver imagem direta
     &-image {
       height: 40px;
       width: auto;
@@ -328,6 +337,15 @@
     }
 
     &__logo {
+      // Ajustar o tamanho do componente logo para mobile
+      app-logo {
+        .logo {
+          width: 140px;
+          height: 34.1px; // Mantém a proporção
+        }
+      }
+      
+      // Manter compatibilidade se ainda houver imagem direta
       &-image {
         height: 32px;
       }
