@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { Button } from '../../components/button/button';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',
   styleUrls: ['./hero.scss'],
-  standalone: true
+  standalone: true,
+  imports: [Button]
 })
 export class HeroComponent {
   // Métodos para interações dos botões

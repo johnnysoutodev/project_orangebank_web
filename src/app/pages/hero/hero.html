@@ -19,19 +19,20 @@
       </p>
       
       <div class="hero__actions">
-        <button class="hero__btn hero__btn--primary" (click)="onOpenAccount()">
-          Abra conta Orange
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
+        <!-- Button Primary -->
+        <app-button 
+          text="Abra conta Orange"
+          variant="primary"
+          (click)="onOpenAccount()">
+        </app-button>
         
-        <button class="hero__btn hero__btn--secondary" (click)="onLearnMore()">
-          Saiba mais
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
+        <!-- Button Light -->
+        <app-button 
+          text="Saiba mais"
+          variant="light"
+          arrowIcon="arrow-down"
+          (click)="onLearnMore()">
+        </app-button>
       </div>
     </div>
     
